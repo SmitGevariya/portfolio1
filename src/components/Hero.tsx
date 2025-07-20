@@ -45,70 +45,15 @@ const Hero = () => {
             className="mb-8"
           >
             <div className="relative w-32 h-32 mx-auto">
-              {/* Main Avatar Container */}
-              <div className="relative w-full h-full">
-                {/* Gradient Background Circle */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 via-blue-500 to-blue-700 shadow-2xl"></div>
-                
-                {/* Inner Glow Effect */}
-                <div className="absolute inset-2 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
-                
-                {/* Neural Network Pattern */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    viewBox="0 0 100 100"
-                    className="w-20 h-20 opacity-30"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="1"
-                  >
-                    {/* Central Node */}
-                    <circle cx="50" cy="50" r="3" fill="white" />
-                    
-                    {/* Outer Nodes */}
-                    <circle cx="30" cy="30" r="2" fill="white" />
-                    <circle cx="70" cy="30" r="2" fill="white" />
-                    <circle cx="30" cy="70" r="2" fill="white" />
-                    <circle cx="70" cy="70" r="2" fill="white" />
-                    <circle cx="50" cy="20" r="2" fill="white" />
-                    <circle cx="50" cy="80" r="2" fill="white" />
-                    <circle cx="20" cy="50" r="2" fill="white" />
-                    <circle cx="80" cy="50" r="2" fill="white" />
-                    
-                    {/* Connections */}
-                    <line x1="50" y1="50" x2="30" y2="30" />
-                    <line x1="50" y1="50" x2="70" y2="30" />
-                    <line x1="50" y1="50" x2="30" y2="70" />
-                    <line x1="50" y1="50" x2="70" y2="70" />
-                    <line x1="50" y1="50" x2="50" y2="20" />
-                    <line x1="50" y1="50" x2="50" y2="80" />
-                    <line x1="50" y1="50" x2="20" y2="50" />
-                    <line x1="50" y1="50" x2="80" y2="50" />
-                  </svg>
-                </div>
-                
-                {/* AI Chip Design */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-8 h-8 border border-white/40 rounded-sm">
-                    <div className="w-full h-full bg-white/10 rounded-sm flex items-center justify-center">
-                      <div className="w-4 h-4 bg-white/20 rounded-xs"></div>
-                    </div>
-                    {/* Circuit Lines */}
-                    <div className="absolute -left-2 top-2 w-2 h-px bg-white/40"></div>
-                    <div className="absolute -left-2 top-4 w-2 h-px bg-white/40"></div>
-                    <div className="absolute -left-2 top-6 w-2 h-px bg-white/40"></div>
-                    <div className="absolute -right-2 top-2 w-2 h-px bg-white/40"></div>
-                    <div className="absolute -right-2 top-4 w-2 h-px bg-white/40"></div>
-                    <div className="absolute -right-2 top-6 w-2 h-px bg-white/40"></div>
-                  </div>
-                </div>
-                
-                {/* Initials */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white font-bold text-2xl font-sans mt-8">
-                    SG
-                  </span>
-                </div>
+              {/* Profile Image Container */}
+              <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl">
+                <img
+                  src="/image.png"
+                  alt="Smit Gevariya"
+                  className="w-full h-full object-cover object-center"
+                />
+                {/* Gradient Overlay for better visual appeal */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 rounded-full"></div>
               </div>
               
               {/* Animated Pulse Ring */}
